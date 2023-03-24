@@ -1,0 +1,100 @@
+/*背景API，固定，覆盖*/
+body {
+    background-image: url("https://api.dujin.org/pic/yuanshen/");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*设置该页面中的标准字体大小*/
+h1 {font-size:400%; font-weight: normal;}
+h2 {font-size:200%;}
+p {font-size:200%;}
+
+/*居中容器*/
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+/*卡片基本类型*/
+.card {
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    margin: 40px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    text-align: center;
+}
+
+/*左右两列*/
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+
+
+/*一行三张图片*/
+.line3pic{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+} 
+  
+.line2pic {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }  
+
+/*校园点滴的图片样式*/
+.schoolimg{
+    height: 400px;
+    width: auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/*随机的一些话*/
+#phrase {
+    opacity: 0; /* 初始设置为透明 */
+    transition: opacity 0.5s ease-in-out; /* 设置淡入淡出的过渡效果 */
+}
+
+/*链接*/
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.links button {
+    border-radius: 50%;
+    height: 160px;
+    width: 160px;
+    margin: 20px;
+    border: 5px solid white;
+    font-size: xx-large;
+}
+.links button a{
+    color: black
+}
+
+/*页脚*/
+.footer {
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    margin: 40px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    text-align: center;
+}
+.footer a{
+    font-size: x-large;
+}
